@@ -1,0 +1,38 @@
+npm install -g @ionic/cli 	--> instalacion ionic
+ionic start 			--> crear una carpeta o proyecto blank, tabs, side menu
+ionic serve 			--> correr ionic en el navegador
+ionic -v			--> ver la version de ionic
+ionic generate page login	--> crear una nueva pagina "login"
+ionic generate s service/noticias --> crear un servicios para consumir api
+ionic g i interfaces/articulos --> 
+
+ejemplos 
+ionic start myApp blank
+mkdir src/app/components
+mkdir src/app/services
+mkdir src/app/pages
+rm -rf myApp --> eliminar la carpeta
+ionic generate page paginas/login --spec=false	--> crear una nueva pagina "login"
+
+--spec=false = quiere decir que omita este archivo que es para hacer pruebas
+
+node -v
+npm -v
+npm install -g npm
+
+
+servidres
+
+cfigurar la carpeta publica
+mkdir
+
+samba smb puerto 445
+
+2- transferencia de archivos puerto 25
+3- servidor ssh
+
+
+ces
+1234
+
+
