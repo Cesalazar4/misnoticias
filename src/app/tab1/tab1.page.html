@@ -1,0 +1,29 @@
+<ion-header [translucent]="true" mode="ios" class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>
+      Notidiario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let articulo of articulos; let i = index" size="12">
+        <ion-card>
+          <ion-card-subtitle>
+            <span>{{ i + 1 }}</span>
+            <span>{{ articulo.source.name }}</span>
+          </ion-card-subtitle>
+          <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
+            {{ articulo.title }}
+          </ion-card-title>
+          <ion-img *ngIf="articulo.urlToImage" [src]="articulo.urlToImage"></ion-img>
+          <ion-card-content>
+            <p>{{ articulo.description }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
